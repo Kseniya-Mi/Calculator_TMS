@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.calculator.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.CalculatorController">
+    <children>
+        <Button fx:id="clear" layoutX="20.0" layoutY="144.0" mnemonicParsing="false" onAction="#onClearButtonClick" prefHeight="60.0" prefWidth="60.0" text="C" />
+        <Button fx:id="backspace" layoutX="98.0" layoutY="144.0" mnemonicParsing="false" onAction="#onBaksButtonClick" prefHeight="60.0" prefWidth="139.0" text="backspace" />
+        <Button fx:id="dot" layoutX="19.0" layoutY="432.0" mnemonicParsing="false" onAction="#onDotButtonClick" prefHeight="60.0" prefWidth="60.0" text="." />
+        <Button fx:id="seven" layoutX="20.0" layoutY="217.0" mnemonicParsing="false" onAction="#onSevenButtonClick" prefHeight="60.0" prefWidth="60.0" text="7" />
+        <Button fx:id="eight" layoutX="97.0" layoutY="216.0" mnemonicParsing="false" onAction="#onEightButtonClick" prefHeight="60.0" prefWidth="60.0" text="8" />
+        <Button fx:id="nine" layoutX="177.0" layoutY="217.0" mnemonicParsing="false" onAction="#onNineButtonClick" prefHeight="60.0" prefWidth="60.0" text="9" />
+        <Button fx:id="divide" layoutX="256.0" layoutY="144.0" mnemonicParsing="false" onAction="#onDivideButtonClick" prefHeight="60.0" prefWidth="60.0" text="/" />
+        <Button fx:id="four" layoutX="20.0" layoutY="287.0" mnemonicParsing="false" onAction="#onFourButtonClick" prefHeight="60.0" prefWidth="60.0" text="4" />
+        <Button fx:id="five" layoutX="97.0" layoutY="286.0" mnemonicParsing="false" onAction="#onFiveButtonClick" prefHeight="60.0" prefWidth="60.0" text="5" />
+        <Button fx:id="six" layoutX="177.0" layoutY="287.0" mnemonicParsing="false" onAction="#onSixButtonClick" prefHeight="60.0" prefWidth="60.0" text="6" />
+        <Button fx:id="multiply" layoutX="256.0" layoutY="217.0" mnemonicParsing="false" onAction="#onMultiplyButtonClick" prefHeight="60.0" prefWidth="60.0" text="*" />
+        <Button fx:id="one" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#onOneButtonClick" prefHeight="60.0" prefWidth="60.0" text="1" />
+        <Button fx:id="two" layoutX="97.0" layoutY="359.0" mnemonicParsing="false" onAction="#onTwoButtonClick" prefHeight="60.0" prefWidth="60.0" text="2" />
+        <Button fx:id="three" layoutX="177.0" layoutY="360.0" mnemonicParsing="false" onAction="#onThreeButtonClick" prefHeight="60.0" prefWidth="60.0" text="3" />
+        <Button fx:id="zero" layoutX="97.0" layoutY="431.0" mnemonicParsing="false" onAction="#onZeroButtonClick" prefHeight="60.0" prefWidth="60.0" text="0" />
+        <Button fx:id="add" layoutX="256.0" layoutY="287.0" mnemonicParsing="false" onAction="#onPlusButtonClick" prefHeight="60.0" prefWidth="60.0" text="+" />
+        <Button fx:id="minus" layoutX="256.0" layoutY="360.0" mnemonicParsing="false" onAction="#onMinusButtonClick" prefHeight="60.0" prefWidth="60.0" text="-" />
+        <Button fx:id="equals" layoutX="177.0" layoutY="432.0" mnemonicParsing="false" onAction="#onEqualsButtonClick" prefHeight="60.0" prefWidth="139.0" text="=" />
+        <Label fx:id="screen" layoutX="20.0" layoutY="14.0" prefHeight="112.0" prefWidth="295.0" />
+    </children>
+</Pane>
